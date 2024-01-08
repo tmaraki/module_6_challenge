@@ -47,6 +47,10 @@ h3 {
     border-radius: 2%;
 }
 
+.Input {
+    font-size: 20px;
+}
+
 .weather-current {
     display: flex;
     align-items: center;
