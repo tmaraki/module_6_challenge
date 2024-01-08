@@ -1,2 +1,2 @@
 # module_6_challenge
-This is a weather
+This is a weather app
