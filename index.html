@@ -21,19 +21,18 @@
 
     <div class="weather-current">
       <h2>City</h2>
-        <img class="weather-icon" src="icon.png"/>   
+        <img class="weather-icon" data-icon/>   
         <div class="currentDay"></div>
         <div class="weather-current-temp">
-          <span data-current-temp>31</span>&deg; 
-        </div>
+          <span data-current-temp></span>&deg;</div>
       <div class="weather-current-right">
         <div class="info-group">
          <div class="label">Wind</div>
-         <div><span data-current-wind>9</span><span class="value-sub-info">mph</span></div>
+         <div><span data-wind></span><span class="value-sub-info">mph</span></div>
         </div>
         <div class="info-group">
           <div class="label">Humidity</div>
-          <div><span data-current-wind>22</span><span class="value-sub-info">&percnt;</span></div>
+          <div><span data-humidity></span><span class="value-sub-info">&percnt;</span></div>
         </div>
       </div>
     </div>
@@ -42,47 +41,54 @@
       <h2 class="text-center" id="5Day">5 Day Forecast</h2>
     </div>
 
+    <section class="future-section" data-future-section>
+          <div class="future-card">
+            <img data-icon class="weather-icon"/>
+            <div class="future-card-day" data-day></div>
+            <div><span data-temp></span><span>&deg;</span></div>
+          </div>
+          <div class="future-card">
+            <img data-icon class="weather-icon"/>
+            <div class="future-card-day" data-day></div>
+            <div><span data-temp></span><span>&deg;</span></div>
+          </div>
+          <div class="future-card">
+            <img data-icon class="weather-icon"/>
+            <div class="future-card-day" data-day></div>
+            <div><span data-temp></span><span>&deg;</span></div>
+          </div>
+          <div class="future-card">
+            <img data-icon class="weather-icon"/>
+            <div class="future-card-day" data-day></div>
+            <div><span data-temp></span><span>&deg;</span></div>
+          </div>
+          <div class="future-card">
+            <img data-icon class="weather-icon"/>
+            <div class="future-card-day" data-day></div>
+            <div><span data-temp></span><span>&deg;</span></div>
+          </div>
+          <div class="future-card">
+            <img data-icon class="weather-icon"/>
+            <div class="future-card-day" data-day></div>
+            <div><span data-temp></span><span>&deg;</span></div>
+          </div>
+          <div class="future-card">
+            <img data-icon class="weather-icon"/>
+            <div class="future-card-day" data-day></div>
+            <div><span data-temp></span><span>&deg;</span></div>
+          </div>
+        </section>
+        
+        <template id="future-card-template">
+          <div class="future-card">
+            <img data-icon class="weather-icon"/>
+            <div class="future-card-day" data-day=""></div>
+            <div><span data-temp></span><span>&deg;</span></div>
+          </div>
+        </template>
+
     <script src="script.js"></script>
 
 </body>
-
-<section class="future-section" data-future-section>
-  <div class="future-card">
-    <img src="icon.png" class="weather-icon"/>
-    <div class="future-card-day">Monday</div>
-    <div>32&deg;</div>
-  </div>
-  <div class="future-card">
-    <img src="icon.png" class="weather-icon"/>
-    <div class="future-card-day">Tuesday</div>
-    <div>32&deg;</div>
-  </div>
-  <div class="future-card">
-    <img src="icon.png" class="weather-icon"/>
-    <div class="future-card-day">Wednesday</div>
-    <div>32&deg;</div>
-  </div>
-  <div class="future-card">
-    <img src="icon.png" class="weather-icon"/>
-    <div class="future-card-day">Thursday</div>
-    <div>32&deg;</div>
-  </div>
-  <div class="future-card">
-    <img src="icon.png" class="weather-icon"/>
-    <div class="future-card-day">Friday</div>
-    <div>32&deg;</div>
-  </div>
-  <div class="future-card">
-    <img src="icon.png" class="weather-icon"/>
-    <div class="future-card-day">Saturday</div>
-    <div>32&deg;</div>
-  </div>
-  <div class="future-card">
-    <img src="icon.png" class="weather-icon"/>
-    <div class="future-card-day">Sunday</div>
-    <div>32&deg;</div>
-  </div>
-</section>
-
 
 </html>
